@@ -9,3 +9,8 @@ RUN [ "cross-build-end" ]
 ```
 
 This leaves the container as a pure ARM container that could be pulled on a raspberry pi
+
+You can get a bash shell with:
+```
+sudo docker run -it --entrypoint=/usr/bin/qemu-arm-static codingwell/rpi-raspbian-qemu /bin/bash
+```
